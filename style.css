@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=La+Belle+Aurore|Open+Sans");
 
 :root {
-  --brightYellow: #e3b505;
+  --brightYellow: #ebee44;
   --darkBrown: #bb9457;
   --yellow: rgb(242, 180, 80);
   --brown: #382923;
@@ -219,7 +219,6 @@ body {
   width: 10rem;
   background: rgba(242, 180, 80, 0.9);
   z-index: 3;
-  /* display: none; */
   opacity: 0;
   transition: all 0.5s ease-in;
 }
@@ -233,6 +232,7 @@ body {
 }
 
 .nav__links {
+  padding-top: 20px;
   list-style: none;
 }
 
@@ -324,16 +324,16 @@ body {
   }
 }
 
-/* drink section */
+/* kebab section */
 
-.drink {
+.kebab {
   background: var(--brown);
   color: var(--brightYellow);
   text-transform: capitalize;
 }
 
-.drink-form,
-.drink-card {
+.kebab-form,
+.kebab-card {
   text-align: center;
   display: grid;
   grid-template-columns: 70%;
@@ -341,7 +341,7 @@ body {
   grid-row-gap: 1.25rem;
 }
 
-.drink-form__feedback {
+.kebab-form__feedback {
   border: 0.1rem solid var(--brightYellow);
   padding: 0.25rem;
   display: none;
@@ -359,8 +359,8 @@ body {
   border-color: green;
 }
 
-.drink-form__title,
-.drink-card__title {
+.kebab-form__title,
+.kebab-card__title {
   font-size: 3rem;
 }
 
@@ -402,7 +402,7 @@ body {
   opacity: 0.5;
 }
 
-.drink-card__list {
+.kebab-card__list {
   display: grid;
   grid-template-columns: 100%;
   grid-row-gap: 2rem;
@@ -425,7 +425,7 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .drink-card__list {
+  .kebab-card__list {
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
   }
